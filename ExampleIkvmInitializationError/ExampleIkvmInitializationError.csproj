@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net6.0;net472</TargetFrameworks>
+    <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="en-test-sent.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="en-test-sent.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IKVM" Version="8.7.4-pre.16" />
+    <PackageReference Include="IKVM.Maven.Sdk" Version="1.6.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <MavenReference Include="org.apache.opennlp:opennlp-tools" Version="1.9.4" />
+  </ItemGroup>
+
+</Project>
