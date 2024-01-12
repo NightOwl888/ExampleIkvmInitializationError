@@ -1,7 +1,7 @@
 ﻿using opennlp.tools.sentdetect;
 using System;
 
-namespace ExampleIkvmNetFrameworkError
+namespace ExampleIkvmInitializationError
 {
     internal class Program
     {
