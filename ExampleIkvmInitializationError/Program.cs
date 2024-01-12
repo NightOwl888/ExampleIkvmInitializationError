@@ -7,7 +7,7 @@ namespace ExampleIkvmNetFrameworkError
     {
         static void Main(string[] args)
         {
-            using System.IO.Stream stream = typeof(Program).Assembly.GetManifestResourceStream("ExampleIkvmNetFrameworkError.en-test-sent.bin");
+            using System.IO.Stream stream = typeof(Program).Assembly.GetManifestResourceStream("ExampleIkvmInitializationError.en-test-sent.bin");
             var sw = new ikvm.io.InputStreamWrapper(stream);
             new SentenceModel(sw);
 
